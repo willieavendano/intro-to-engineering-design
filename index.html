@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction to Engineering Design — The Cushman School</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root{--blue:#0E406A;--navy:#005487;--bright:#0071CE;--light-blue:#7BADD3;--pale-blue:#BDD4E7;--gray:#898A8D;--mid-gray:#B1B1B1;--off-white:#F5F7FA;--white:#FFFFFF}
+    *{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+    body{font-family:'Inter',sans-serif;font-size:16px;color:#1a1a1a;background:var(--white);line-height:1.65}
+    h1,h2,h3,h4{font-family:'Raleway',sans-serif;font-weight:700;line-height:1.2}
+    a{color:var(--bright);text-decoration:none}a:hover{text-decoration:underline}
+    nav{position:fixed;top:0;width:100%;background:var(--blue);z-index:200;padding:0 2.5rem;height:60px;display:flex;align-items:center;gap:1.5rem}
+    .nav-back{font-family:'Raleway',sans-serif;font-size:.8rem;font-weight:600;letter-spacing:.04em;color:var(--pale-blue);white-space:nowrap}
+    .nav-back:hover{color:var(--white);text-decoration:none}
+    .nav-divider{width:1px;height:18px;background:var(--navy);flex-shrink:0}
+    .nav-name{font-family:'Raleway',sans-serif;font-weight:700;font-size:1rem;color:var(--white);letter-spacing:.04em}
+    .nav-tag{font-family:'Raleway',sans-serif;font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--light-blue);margin-left:auto}
+    .hero{background:var(--blue);padding:8rem 2.5rem 5rem;text-align:center;color:var(--white)}
+    .hero-label{display:inline-block;font-family:'Raleway',sans-serif;font-size:.75rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--pale-blue);margin-bottom:1.25rem}
+    .hero h1{font-size:clamp(2rem,4vw,3rem);color:var(--white);margin-bottom:.75rem}
+    .hero-school{font-family:'Raleway',sans-serif;font-size:.85rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--pale-blue)}
+    .hero-divider{width:48px;height:3px;background:var(--bright);margin:2rem auto}
+    .hero-tagline{max-width:560px;margin:0 auto;color:var(--pale-blue);font-size:1rem;line-height:1.7}
+    .section-inner{max-width:900px;margin:0 auto;padding:4rem 2.5rem}
+    .section-label{font-family:'Raleway',sans-serif;font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--bright);margin-bottom:.6rem}
+    .section-heading{font-size:1.75rem;color:var(--blue);margin-bottom:1rem}
+    .section-divider{width:40px;height:3px;background:var(--light-blue);margin-bottom:2rem}
+    .about-text p{color:#333;margin-bottom:1.1rem}
+    .goals-list{list-style:none;margin-top:1.5rem;display:flex;flex-direction:column;gap:.6rem}
+    .goals-list li{padding-left:1.25rem;position:relative;color:#333;font-size:.95rem}
+    .goals-list li::before{content:'—';position:absolute;left:0;color:var(--bright);font-weight:600}
+    .units-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1rem}
+    .unit-card{background:var(--white);border-top:3px solid var(--blue);padding:1.25rem}
+    .unit-number{font-family:'Raleway',sans-serif;font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--mid-gray);margin-bottom:.4rem}
+    .unit-card h3{font-size:.95rem;color:var(--blue);margin-bottom:.5rem}
+    .unit-card p{font-size:.83rem;color:#555;line-height:1.5}
+    .tools-grid{display:flex;flex-wrap:wrap;gap:.75rem}
+    .tool-pill{font-family:'Raleway',sans-serif;font-size:.82rem;font-weight:600;letter-spacing:.04em;padding:.4rem .9rem;background:var(--pale-blue);color:var(--blue);border-radius:2px}
+    footer{background:var(--blue);color:var(--pale-blue);text-align:center;padding:2.5rem;font-size:.82rem}
+    footer a{color:var(--light-blue)}
+    @media(max-width:600px){.nav-tag{display:none}.units-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <nav>
+    <a class="nav-back" href="https://willieavendano.github.io">&#8592; Willie Avendano</a>
+    <span class="nav-divider"></span>
+    <span class="nav-name">Intro to Engineering Design</span>
+    <span class="nav-tag">PLTW &middot; Engineering</span>
+  </nav>
+
+  <header class="hero">
+    <span class="hero-label">PLTW &middot; Engineering &middot; The Cushman School</span>
+    <h1>Introduction to Engineering Design</h1>
+    <p class="hero-school">The Cushman School &mdash; Miami, FL</p>
+    <div class="hero-divider"></div>
+    <p class="hero-tagline">PLTW IED &mdash; students master the engineering design process through 3D solid modeling, technical documentation, and hands-on prototype fabrication.</p>
+  </header>
+
+  <section style="background:var(--white)">
+    <div class="section-inner">
+      <p class="section-label">Overview</p>
+      <h2 class="section-heading">About the Course</h2>
+      <div class="section-divider"></div>
+      <div class="about-text">
+        <p>Introduction to Engineering Design is the foundational PLTW engineering course. Students work through the full product development cycle &mdash; from initial sketches through parametric 3D models to fabricated prototypes &mdash; using industry-standard tools and practices.</p>
+        <p>The course places heavy emphasis on Autodesk Inventor for solid modeling, and on the discipline of technical documentation that makes engineering work reproducible and communicable. Students learn not just how to build, but how to record their thinking so others can build too.</p>
+        <ul class="goals-list">
+          <li>Create orthographic and isometric technical sketches by hand</li>
+          <li>Build parametric 3D models and assemblies in Autodesk Inventor</li>
+          <li>Apply geometric dimensioning and tolerancing (GD&T) to drawings</li>
+          <li>Reverse-engineer an existing product and document its components</li>
+          <li>Fabricate a prototype and evaluate it against design criteria</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:var(--off-white)">
+    <div class="section-inner">
+      <p class="section-label">Curriculum</p>
+      <h2 class="section-heading">Units</h2>
+      <div class="section-divider"></div>
+      <div class="units-grid">
+        <div class="unit-card">
+          <p class="unit-number">Unit 1</p>
+          <h3>Design Process &amp; Documentation</h3>
+          <p>Engineering notebooks, design briefs, iteration logs, and technical communication standards.</p>
+        </div>
+        <div class="unit-card">
+          <p class="unit-number">Unit 2</p>
+          <h3>Technical Sketching</h3>
+          <p>Orthographic projection, isometric drawing, section views, and freehand proportion.</p>
+        </div>
+        <div class="unit-card">
+          <p class="unit-number">Unit 3</p>
+          <h3>3D Solid Modeling</h3>
+          <p>Autodesk Inventor: sketching, extrusion, features, assemblies, and drawing sheets.</p>
+        </div>
+        <div class="unit-card">
+          <p class="unit-number">Unit 4</p>
+          <h3>Geometric Dimensioning &amp; Tolerancing</h3>
+          <p>GD&T basics, tolerance stack-up, fits, and communicating precision in drawings.</p>
+        </div>
+        <div class="unit-card">
+          <p class="unit-number">Unit 5</p>
+          <h3>Reverse Engineering</h3>
+          <p>Disassemble, measure, model, and document a real product's components and function.</p>
+        </div>
+        <div class="unit-card">
+          <p class="unit-number">Unit 6</p>
+          <h3>Prototype Fabrication</h3>
+          <p>3D printing, post-processing, testing against design criteria, and iteration.</p>
+        </div>
+        <div class="unit-card">
+          <p class="unit-number">Unit 7</p>
+          <h3>Culminating Design Project</h3>
+          <p>Student-driven design challenge with full documentation, CAD model, and prototype.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:var(--white)">
+    <div class="section-inner">
+      <p class="section-label">Resources</p>
+      <h2 class="section-heading">Tools &amp; Technology</h2>
+      <div class="section-divider"></div>
+      <div class="tools-grid">
+        <span class="tool-pill">Autodesk Inventor</span>
+        <span class="tool-pill">3D Printing (FDM)</span>
+        <span class="tool-pill">Calipers &amp; Measurement</span>
+        <span class="tool-pill">PLTW Activity Central</span>
+        <span class="tool-pill">Technical Drawing Tools</span>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p><a href="https://willieavendano.github.io">Willie Avendano</a> &mdash; <a href="https://www.cushmanschool.org" target="_blank">The Cushman School</a> &mdash; Miami, FL</p>
+    <p style="margin-top:.5rem"><a href="mailto:wavendano@cushmanschool.org">wavendano@cushmanschool.org</a></p>
+  </footer>
+</body>
+</html>
